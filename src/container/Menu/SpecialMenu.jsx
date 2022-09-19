@@ -7,15 +7,15 @@ import "./SpecialMenu.css";
 
 const SpecialMenu = () => (
   <div className="app__specialMenu flex__center section__padding" id="menu">
-    <div className="app__specialMenu">
+    <div className="app__specialMenu" style={{textAlign: 'center'}}>
       <SubHeading title="Menu That Fit Your Palatte" />
       <h1 className="headtext__cormorant">Today's Special</h1>
     </div>
 
     <div className="app__specialMenu-menu">
       <div className="app__specialMenu-menu_wine">
-        <p className="app__specialMenu_menu_heading">Wine and Beer</p>
-        <div className="app__speciaMenu_menu_items">
+        <p className="app__specialMenu-menu_heading">Wine and Beer</p>
+        <div className="app__speciaMenu-menu_items">
           {data.wines.map((wine, index) => (
             <MenuItem
               key={wine.title + index}
@@ -27,13 +27,13 @@ const SpecialMenu = () => (
         </div>
       </div>
 
-      <div className="app__specilMenu-menu">
+      <div className="app__specialMenu-menu_img">
         <img src={images.menu} alt="Menu Img" />
       </div>
 
       <div className="app__specialMenu-menu_cocktails">
-        <p className="app__specialMenu_menu_heading">Wine and Beer</p>
-        <div className="app__speciaMenu_menu_items">
+        <p className="app__specialMenu-menu_heading">Cocktails</p>
+        <div className="app__speciaMenu-menu_items">
           {data.cocktails.map((cocktail, index) => (
             <MenuItem
               key={cocktail.title + index}
