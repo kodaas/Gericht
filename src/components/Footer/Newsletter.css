@@ -1,4 +1,5 @@
 .app__newsletter {
+    z-index: 3;
     padding: 2rem 4rem;
     border: 1px solid var(--color-golden);
     background: var(--color-black);
@@ -17,7 +18,7 @@
     width: 620px;
     border: 1px solid var(--color-golden);
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.18rem;
     font-family: var(--font-base);
     color: var(--color-white);
     margin-right: 2rem;

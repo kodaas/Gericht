@@ -7,7 +7,7 @@ import './Footer.css';
 
 const Footer = () => (
   <div className="app__footer section__padding">
-    {/* <FooterOverlay /> */}
+    <FooterOverlay />
     <Newsletter />
   </div>
 );
